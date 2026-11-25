@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Nadzór BHP na budowach i obsługa BHP firm Wrocław | BHP Partner Grupa Bessert</title>
+<meta name="description" content="BHP Partner Grupa Bessert: nadzór BHP na budowach, obsługa BHP firm, szkół i przedszkoli, szkolenia BHP wstępne i okresowe, dokumentacja powypadkowa. Wrocław i Dolny Śląsk, od 2004 roku.">
+<meta name="theme-color" content="#111317">
+<link rel="preload" href="fonts/archivo-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Archivo";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/archivo-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00D7,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2026}
+@font-face{font-family:"Archivo";font-style:normal;font-weight:400 800;font-display:swap;src:url(fonts/archivo-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:"Archivo-fb";src:local("Arial");size-adjust:102%;ascent-override:90%;descent-override:22%;line-gap-override:0%}
+:root{--czern:#111317;--noc:#0B0C0E;--zolty:#FFC20E;--zolty2:#E5AC00;--stal:#EEF0F2;--linia:#D5D9DE;--tekst:#2A2E35;--szary:#5B626C;--hdr:72px}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--hdr)}
+body{margin:0;font-family:Archivo,"Archivo-fb",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:clamp(16px,.2vw + 15px,18px);line-height:1.6;color:var(--tekst);background:#fff;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-weight:800;line-height:1.12;color:var(--czern);margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(28px,2.6vw,44px)}
+h3{font-size:clamp(19px,1.3vw,22px);font-weight:700}
+p{margin:0 0 1em}
+.wrap{width:min(1240px,100% - 40px);margin:0 auto}
+.pasy{display:block;width:72px;height:14px;background:repeating-linear-gradient(180deg,var(--czern) 0 3px,transparent 3px 5.5px);margin:0 0 22px}
+.pasy.j{background:repeating-linear-gradient(180deg,var(--zolty) 0 3px,transparent 3px 5.5px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;background:var(--zolty);color:var(--czern);font-weight:700;font-size:17px;text-decoration:none;border:0;border-radius:3px;cursor:pointer;font-family:inherit;transition:background .15s}
+.btn:hover{background:var(--zolty2)}
+.btn svg{width:18px;height:18px}
+
+/* naglowek */
+.hdr{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--linia);height:var(--hdr)}
+.hdr .wrap{height:100%;display:flex;align-items:center;gap:28px}
+.logo{display:block;flex:none;color:var(--czern);text-decoration:none}
+.logo svg{display:block;height:50px;width:auto}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{text-decoration:none;font-weight:600;font-size:16px;color:var(--czern);padding:6px 0;border-bottom:3px solid transparent}
+.nav a:hover,.nav a.akt{border-color:var(--zolty)}
+.tel{display:inline-flex;align-items:center;gap:8px;background:var(--czern);color:#fff;text-decoration:none;font-weight:700;padding:0 18px;min-height:44px;border-radius:3px;white-space:nowrap}
+.tel svg{width:16px;height:16px;color:var(--zolty)}
+.burger{display:none;margin-left:auto;width:46px;height:46px;border:0;background:none;cursor:pointer;padding:11px}
+.burger span{display:block;height:3px;background:var(--czern);margin:5px 0}
+@media (max-width:1060px){.nav{display:none}.burger{display:block;margin-left:0}.tel{margin-left:auto}
+ .hdr.otw .nav{display:flex;flex-direction:column;gap:0;position:absolute;top:var(--hdr);left:0;right:0;background:#fff;border-bottom:4px solid var(--zolty);padding:8px 20px 18px;box-shadow:0 18px 30px rgba(0,0,0,.12)}
+ .hdr.otw .nav a{font-size:19px;padding:14px 0;border-bottom:1px solid var(--linia)}}
+@media (max-width:560px){:root{--hdr:64px}.logo svg{height:36px}.tel b{display:none}.tel{padding:0 13px;min-height:46px}.tel svg{width:19px;height:19px}.hdr .wrap{gap:10px}}
+
+/* hero */
+.hero{position:relative;min-height:calc(100svh - var(--hdr));display:flex;align-items:center;background:var(--czern);overflow:hidden;color:#fff}
+.kolaz{position:absolute;inset:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:1fr;gap:3px;background:var(--czern)}
+.kolaz img{width:100%;height:100%;object-fit:cover}
+.kolaz img:nth-child(n+13){display:none}
+@media (min-width:2100px){.kolaz{grid-template-columns:repeat(5,minmax(0,1fr))}.kolaz img:nth-child(n+13){display:block}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,12,14,.88) 0%,rgba(11,12,14,.72) 45%,rgba(11,12,14,.32) 100%)}
+.hero-in{position:relative;z-index:2;padding:56px 0}
+.hero h1{color:#fff;font-size:clamp(34px,4.1vw,68px)}
+.hero h1{max-width:820px}
+.hero .lead{font-size:clamp(17px,1.25vw,21px);max-width:640px;color:#E6E8EB;margin:22px 0 32px}
+.hero .podpis{margin:26px 0 0;font-size:15px;color:#BFC4CA}
+.hero .podpis b{color:#fff}
+@media (max-width:760px){
+ .hero{flex-direction:column;align-items:stretch}
+ .hero::after{display:none}
+ .kolaz{position:relative;inset:auto;flex:1 1 auto;min-height:max(27svh,170px);grid-template-columns:repeat(3,minmax(0,1fr))}
+ .kolaz img:nth-child(n+7){display:none}
+ .kolaz{border-bottom:5px solid var(--zolty)}
+ .hero-in{flex:0 0 auto;padding:22px 0 26px}
+ .hero h1{font-size:clamp(27px,7.4vw,34px)}
+ .hero .lead{font-size:16px;margin:12px 0 24px;line-height:1.5}
+ .hero .btn{width:100%}
+ .hero .podpis{display:none}
+}
+@media (max-width:760px) and (max-height:690px){.hero h1{font-size:25px}.hero .lead{font-size:15px;margin:10px 0 24px}.hero-in{padding:16px 0 20px}}
+
+/* sekcje */
+.sek{padding:clamp(64px,7vw,112px) 0}
+.sek.stal{background:var(--stal)}
+.glowa{max-width:760px;margin:0 0 44px}
+.glowa p{color:var(--szary);font-size:clamp(17px,1.1vw,19px);margin:16px 0 0}
+
+/* oferta */
+.uslugi{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:3px solid var(--czern)}
+.usl{padding:30px 28px 34px 0;border-bottom:1px solid var(--linia)}
+.usl:not(:nth-child(3n+1)){padding-left:28px;border-left:1px solid var(--linia)}
+.usl h3{margin:0 0 12px}
+.usl p{color:var(--szary);margin:0 0 12px}
+.usl ul{margin:0;padding:0;list-style:none}
+.usl li{position:relative;padding-left:20px;margin:6px 0;font-size:.95em}
+.usl li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:3px;background:var(--zolty2)}
+@media (max-width:980px){.uslugi{grid-template-columns:repeat(2,minmax(0,1fr))}.usl:not(:nth-child(3n+1)){padding-left:0;border-left:0}.usl:nth-child(2n){padding-left:24px;border-left:1px solid var(--linia)}}
+@media (max-width:640px){.uslugi{grid-template-columns:minmax(0,1fr)}.usl:nth-child(2n){padding-left:0;border-left:0}.usl{padding:24px 0 26px}}
+
+/* budowy */
+.tor-gora{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:34px}
+.tor-gora .glowa{margin:0}
+.strz{display:flex;gap:8px;flex:none}
+.strz button{width:50px;height:50px;border:2px solid var(--czern);background:#fff;cursor:pointer;display:grid;place-items:center;border-radius:3px}
+.strz button:hover{background:var(--zolty);border-color:var(--zolty)}
+.strz svg{width:20px;height:20px}
+.tor{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(280px,360px);gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:0 0 6px;cursor:grab}
+.tor::-webkit-scrollbar{display:none}
+.tor.ciag{cursor:grabbing;scroll-snap-type:none}
+.karta{scroll-snap-align:start;background:#fff;border-top:6px solid var(--czern);position:relative;display:flex;flex-direction:column}
+.karta::before{content:"";position:absolute;top:-6px;right:0;width:64px;height:6px;background:repeating-linear-gradient(90deg,var(--zolty) 0 12px,var(--czern) 12px 24px)}
+.fot{position:relative;aspect-ratio:11/7;background:var(--czern);overflow:hidden}
+.fot .pas{display:flex;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.fot .pas::-webkit-scrollbar{display:none}
+.fot img{flex:0 0 100%;width:100%;height:100%;object-fit:cover;scroll-snap-align:start;cursor:zoom-in}
+.fot .lic{position:absolute;right:10px;bottom:10px;background:rgba(11,12,14,.78);color:#fff;font-size:13px;font-weight:600;padding:3px 9px;border-radius:2px}
+.fot .ps{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border:0;border-radius:50%;background:rgba(255,255,255,.92);display:none;place-items:center;cursor:pointer}
+.fot .ps svg{width:16px;height:16px}
+.fot .ps.l{left:8px}.fot .ps.p{right:8px}
+@media (hover:hover){.karta:hover .fot .ps{display:grid}}
+.kt{padding:20px 22px 24px}
+.kt h3{font-size:20px;margin:0 0 10px}
+.kt dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 14px;font-size:15px}
+.kt dt{color:var(--szary)}
+.kt dd{margin:0;font-weight:600;color:var(--czern)}
+.lista{margin-top:40px;border-top:1px solid var(--linia)}
+.lista summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0;font-weight:700;font-size:18px;color:var(--czern)}
+.lista summary::-webkit-details-marker{display:none}
+.lista summary span{width:34px;height:34px;display:grid;place-items:center;background:var(--czern);color:var(--zolty);font-size:22px;line-height:1;border-radius:2px;flex:none}
+.lista[open] summary span{transform:rotate(45deg)}
+.lista ol{columns:2;column-gap:48px;margin:0;padding:0 0 10px 22px}
+.lista li{break-inside:avoid;margin:0 0 14px;padding-left:4px}
+.lista li b{color:var(--czern);display:block}
+.lista li small{color:var(--szary);font-size:14px}
+@media (max-width:760px){.lista ol{columns:1}.strz{display:none}.tor{grid-auto-columns:82%}}
+
+/* ciemna */
+.ciemna{background:var(--czern);color:#D9DCE0}
+.ciemna h2{color:#fff}
+.ciem-siatka{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(36px,5vw,80px);align-items:center}
+.ciemna p{color:#C3C8CE}
+.ciemna .fakty{list-style:none;margin:28px 0 0;padding:0;border-top:1px solid #2C3038}
+.ciemna .fakty li{padding:16px 0 16px 34px;border-bottom:1px solid #2C3038;position:relative;color:#EDEFF1}
+.ciemna .fakty li::before{content:"";position:absolute;left:0;top:23px;width:20px;height:9px;background:repeating-linear-gradient(180deg,var(--zolty) 0 2px,transparent 2px 3.5px)}
+.ciem-fot{position:relative;margin:0}
+.ciem-fot img{width:100%;max-width:640px;margin-left:auto;cursor:zoom-in}
+.ciem-fot figcaption{font-size:14px;color:#9AA1A9;margin-top:10px;text-align:right}
+@media (max-width:900px){.ciem-siatka{grid-template-columns:minmax(0,1fr)}.ciem-fot img{max-width:100%}}
+
+/* aktualnosci */
+.akt-siatka{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.wpis{border-top:3px solid var(--czern);padding:18px 0 0}
+.wpis time{display:inline-block;font-weight:700;font-size:14px;background:var(--zolty);color:var(--czern);padding:3px 9px;border-radius:2px;margin-bottom:12px}
+.wpis h3{font-size:18px;line-height:1.3}
+.akt-nota{margin:34px 0 0;color:var(--szary);font-size:15px;max-width:720px}
+@media (max-width:980px){.akt-siatka{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.akt-siatka{grid-template-columns:minmax(0,1fr)}}
+
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(36px,5vw,80px)}
+.osoba{background:#fff;padding:28px;border-top:6px solid var(--zolty);margin:0 0 26px}
+.osoba b{display:block;font-size:20px;color:var(--czern)}
+.osoba span{color:var(--szary)}
+.osoba a.duzy{display:block;font-size:clamp(26px,2.4vw,34px);font-weight:800;color:var(--czern);text-decoration:none;margin:14px 0 4px;letter-spacing:.01em}
+.osoba a.mail{font-weight:600}
+.adr{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;font-size:15px}
+.adr h3{font-size:16px;margin:0 0 6px}
+.adr p{margin:0;color:var(--szary)}
+form{background:#fff;padding:clamp(22px,3vw,36px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+form .cala{grid-column:1/-1}
+label{display:block;font-weight:600;font-size:15px;color:var(--czern);margin-bottom:6px}
+input,select,textarea{width:100%;font:inherit;font-size:16px;padding:12px 14px;border:1.5px solid #C4C9CF;border-radius:3px;background:#fff;color:var(--czern)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--czern);box-shadow:0 0 0 3px rgba(255,194,14,.55)}
+textarea{min-height:120px;resize:vertical}
+.zgoda{font-size:13px;color:var(--szary);display:flex;gap:10px;align-items:flex-start}
+.zgoda input{width:auto;margin-top:3px}
+.wynik{font-size:15px;color:var(--czern);font-weight:600}
+@media (max-width:900px){.kontakt{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:560px){form{grid-template-columns:minmax(0,1fr)}.adr{grid-template-columns:minmax(0,1fr)}}
+
+/* stopka */
+.stopka{background:var(--noc);color:#A9AFB6;padding:56px 0 28px;font-size:15px}
+.st-siatka{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:28px}
+.stopka .logo{color:#fff}
+.stopka .logo svg{height:40px}
+.stopka h3{color:#fff;font-size:15px;margin:0 0 10px}
+.stopka p{margin:0}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:#fff}
+.st-dol{margin-top:40px;padding-top:20px;border-top:1px solid #23262C;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:14px}
+@media (max-width:900px){.st-siatka{grid-template-columns:repeat(2,minmax(0,1fr))}.st-siatka>div:first-child{grid-column:1/-1}}
+
+/* pasek mobilny */
+.mob{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;grid-template-columns:1fr 1.3fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--linia);box-shadow:0 -6px 18px rgba(0,0,0,.08);transform:translateY(110%);transition:transform .25s}
+.mob a{min-height:48px;font-size:16px;padding:0 10px}
+.mob .zad{background:var(--czern);color:#fff}
+.mob.widac{transform:none}
+@media (max-width:760px){.mob{display:grid}.stopka{padding-bottom:96px}}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(8,9,11,.94);display:none;align-items:center;justify-content:center;padding:56px 16px}
+.lb.otw{display:flex}
+.lb img{max-width:min(100%,1200px);max-height:100%;object-fit:contain}
+.lb button{position:absolute;background:none;border:0;color:#fff;cursor:pointer;width:52px;height:52px;display:grid;place-items:center}
+.lb button svg{width:26px;height:26px}
+.lb .x{top:8px;right:8px}.lb .l{left:6px;top:50%;transform:translateY(-50%)}.lb .p{right:6px;top:50%;transform:translateY(-50%)}
+.lb .op{position:absolute;bottom:14px;left:0;right:0;text-align:center;color:#D5D9DE;font-size:14px;padding:0 16px}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <pattern id="pasyLogo" width="10" height="5" patternUnits="userSpaceOnUse"><rect width="10" height="3.6" fill="#fff"/></pattern>
+  <mask id="mPasy" maskUnits="userSpaceOnUse" x="0" y="0" width="300" height="92"><rect x="0" y="0" width="300" height="56" fill="url(#pasyLogo)"/><rect x="0" y="56" width="300" height="36" fill="#fff"/></mask>
+  <symbol id="logo" viewBox="0 0 300 92">
+   <text x="1" y="48" font-family="Archivo,Arial,sans-serif" font-weight="800" font-size="52" letter-spacing="1.5" textLength="296" lengthAdjust="spacingAndGlyphs" fill="currentColor" mask="url(#mPasy)">BHP PARTNER</text>
+   <text x="26" y="86" font-family="Archivo,Arial,sans-serif" font-weight="800" font-size="27" letter-spacing="1" transform="skewX(-12)" textLength="226" lengthAdjust="spacingAndGlyphs" fill="currentColor">GRUPA BESSERT</text>
+  </symbol>
+  <symbol id="ikTel" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+  <symbol id="ikL" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="square"/></symbol>
+  <symbol id="ikP" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="square"/></symbol>
+ </defs>
+</svg>
+
+<header class="hdr" id="hdr">
+ <div class="wrap">
+  <a class="logo" href="#" aria-label="BHP Partner Grupa Bessert - strona główna"><svg viewBox="0 0 300 92" role="img" aria-hidden="true"><use href="#logo"/></svg></a>
+  <nav class="nav" id="nav">
+   <a href="#oferta">Oferta</a>
+   <a href="#szkolenia">Szkolenia BHP</a>
+   <a href="#budowy">Inwestycje</a>
+   <a href="#aktualnosci">Aktualności</a>
+   <a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="tel" href="tel:+48500116566" aria-label="Zadzwoń: 500 116 566"><svg aria-hidden="true"><use href="#ikTel"/></svg><b>500 116 566</b></a>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="start">
+ <div class="kolaz" aria-hidden="true">
+  <img src="img/sky-tower-noc.webp" width="550" height="350" alt="" fetchpriority="high">
+  <img src="img/stadion-z-gory.webp" width="549" height="350" alt="" fetchpriority="high">
+  <img src="img/ikea-bielany.webp" width="550" height="350" alt="" fetchpriority="high">
+  <img src="img/sky-tower-elewacja.webp" width="550" height="350" alt="">
+  <img src="img/szalunki.webp" width="550" height="350" alt="">
+  <img src="img/zbrojenie.webp" width="550" height="350" alt="">
+  <img src="img/budowa-porr.webp" width="550" height="350" alt="">
+  <img src="img/stadion-konstrukcja.webp" width="549" height="350" alt="">
+  <img src="img/hala-montaz.webp" width="550" height="350" alt="">
+  <img src="img/budowa-z-gory.webp" width="550" height="350" alt="">
+  <img src="img/zurawie.webp" width="550" height="350" alt="">
+  <img src="img/sky-tower-budowa.webp" width="550" height="350" alt="">
+  <img src="img/budowa-centrum.webp" width="550" height="350" alt="">
+  <img src="img/hala-wnetrze.webp" width="550" height="350" alt="">
+  <img src="img/stadion-budowa.webp" width="550" height="350" alt="">
+ </div>
+ <div class="wrap hero-in">
+  <h1>Nadzór BHP na budowach i obsługa BHP firm we Wrocławiu</h1>
+  <p class="lead">Od 2004 roku prowadzimy BHP na dużych inwestycjach regionu, m.in. przy Sky Tower, Stadionie Miejskim i IKEA w Bielanach Wrocławskich. Obsługujemy też biura, szkoły, przedszkola i agencje pracy.</p>
+  <a class="btn" href="#kontakt">Zapytaj o obsługę BHP</a>
+  <p class="podpis"><b>Sławomir Bessert</b>, specjalista ds. BHP, BHP Partner Grupa Bessert</p>
+ </div>
+</section>
+
+<section class="sek" id="oferta">
+ <div class="wrap">
+  <div class="glowa">
+   <span class="pasy"></span>
+   <h2>Zakres usług BHP</h2>
+   <p>Proste i skuteczne rozwiązania zgodne z polskim prawem, zarówno dla firm biurowych, jak i dla dużych inwestycji budowlanych.</p>
+  </div>
+  <div class="uslugi">
+   <div class="usl">
+    <h3>Nadzór BHP na budowie</h3>
+    <p>Stały nadzór nad bezpieczeństwem pracy na terenie budowy.</p>
+    <ul><li>konsultacje przy tworzeniu planu BIOZ</li><li>kontrole stanowisk pracy z raportami i dokumentacją zdjęciową</li><li>kontrola podwykonawców: sprzęt, szkolenia, badania, uprawnienia</li><li>wyrywkowe badania trzeźwości</li></ul>
+   </div>
+   <div class="usl">
+    <h3>Obsługa BHP firm</h3>
+    <p>Stała opieka nad firmą, także jako zewnętrzna służba BHP.</p>
+    <ul><li>ocena ryzyka zawodowego i instrukcje stanowiskowe</li><li>kontrole warunków pracy</li><li>odpowiedzi na nakazy i wystąpienia PIP</li><li>dokumenty dla ZUS i GUS, apteczki, oznakowanie</li></ul>
+   </div>
+   <div class="usl">
+    <h3>Szkoły, przedszkola i biura</h3>
+    <p>Obsługa BHP placówek oświatowych i firm o pracy typowo biurowej.</p>
+    <ul><li>szkolenia wstępne i okresowe pracowników</li><li>ocena ryzyka na poszczególnych stanowiskach</li><li>kontrole i przeglądy warunków pracy</li><li>pomoc w zlecaniu pomiarów środowiska pracy</li></ul>
+   </div>
+   <div class="usl" id="szkolenia">
+    <h3>Szkolenia BHP</h3>
+    <p>Dla pracowników wszystkich grup zawodowych, w naszym biurze albo u Klienta.</p>
+    <ul><li>szkolenia wstępne nowo przyjmowanych pracowników</li><li>szkolenia okresowe</li><li>program dopasowany do firmy</li><li>szkolenia także w języku angielskim</li></ul>
+   </div>
+   <div class="usl">
+    <h3>Dokumentacja powypadkowa</h3>
+    <p>Pełna dokumentacja wypadku przy pracy i udział w komisji.</p>
+    <ul><li>protokoły powypadkowe i karty wypadku</li><li>protokoły wysłuchania poszkodowanych i świadków</li><li>karty Z-KW dla ZUS</li><li>reprezentowanie pracodawcy przed PIP i PIS</li></ul>
+   </div>
+   <div class="usl">
+    <h3>Nadzór inwestorski</h3>
+    <p>Kompleksowe prowadzenie nadzoru inwestorskiego.</p>
+    <ul><li>inspektor nadzoru budowlanego</li><li>inspektor robót elektrycznych</li><li>inspektor robót sanitarnych</li></ul>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="sek stal" id="budowy">
+ <div class="wrap">
+  <div class="tor-gora">
+   <div class="glowa">
+    <span class="pasy"></span>
+    <h2>Budowy, na których prowadziliśmy BHP</h2>
+    <p>Wybrane inwestycje z Wrocławia i regionu, przy których odpowiadaliśmy za bezpieczeństwo pracy setek, a nawet tysięcy osób.</p>
+   </div>
+   <div class="strz"><button type="button" data-tor="-1" aria-label="Poprzednie"><svg><use href="#ikL"/></svg></button><button type="button" data-tor="1" aria-label="Następne"><svg><use href="#ikP"/></svg></button></div>
+  </div>
+  <div class="tor" id="tor">
+   <article class="karta">
+    <div class="fot"><div class="pas">
+     <img src="img/sky-tower-noc.webp" width="550" height="350" alt="Budowa Sky Tower we Wrocławiu nocą" loading="lazy">
+     <img src="img/sky-tower-elewacja.webp" width="550" height="350" alt="Elewacja Sky Tower w trakcie budowy" loading="lazy">
+     <img src="img/sky-tower-budowa.webp" width="550" height="350" alt="Sky Tower w trakcie budowy" loading="lazy">
+    </div></div>
+    <div class="kt"><h3>Sky Tower, Wrocław</h3><dl><dt>Okres</dt><dd>02.2010 - 09.2013</dd><dt>Na budowie</dt><dd>ok. 1500 osób</dd></dl></div>
+   </article>
+   <article class="karta">
+    <div class="fot"><div class="pas">
+     <img src="img/stadion-z-gory.webp" width="549" height="350" alt="Budowa Stadionu Miejskiego we Wrocławiu z lotu ptaka" loading="lazy">
+     <img src="img/stadion-konstrukcja.webp" width="549" height="350" alt="Konstrukcja Stadionu Miejskiego" loading="lazy">
+     <img src="img/stadion-budowa.webp" width="550" height="350" alt="Plac budowy Stadionu Miejskiego" loading="lazy">
+     <img src="img/stadion-teren.webp" width="549" height="350" alt="Teren budowy Stadionu Miejskiego" loading="lazy">
+    </div></div>
+    <div class="kt"><h3>Stadion Miejski, Wrocław</h3><dl><dt>Wykonawca</dt><dd>MAX BÖGL</dd><dt>Okres</dt><dd>02.2010 - 05.2012</dd><dt>Na budowie</dt><dd>ok. 2000 osób</dd></dl></div>
+   </article>
+   <article class="karta">
+    <div class="fot"><div class="pas">
+     <img src="img/ikea-bielany.webp" width="550" height="350" alt="Budowa centrum handlowego IKEA w Bielanach Wrocławskich" loading="lazy">
+    </div></div>
+    <div class="kt"><h3>Centrum handlowe IKEA, Bielany Wrocławskie</h3><dl><dt>Inwestor</dt><dd>Inter Ikea / Gleeds</dd><dt>Od</dt><dd>08.2014</dd></dl></div>
+   </article>
+   <article class="karta">
+    <div class="fot"><div class="pas">
+     <img src="img/bombardier-640.webp" width="640" height="480" alt="Budowa lakierni i hali produkcyjnej Bombardier we Wrocławiu" loading="lazy" data-duze="img/bombardier.webp">
+    </div></div>
+    <div class="kt"><h3>Lakiernia i hala produkcyjna, Bombardier Wrocław</h3><dl><dt>Zakres</dt><dd>budowa lakierni oraz hali nadwozi wagonów</dd><dt>Rok</dt><dd>2016</dd></dl></div>
+   </article>
+   <article class="karta">
+    <div class="fot"><div class="pas">
+     <img src="img/arkady-sky-tower-640.webp" width="640" height="388" alt="Arkady Wrocławskie i Sky Tower" loading="lazy" data-duze="img/arkady-sky-tower.webp">
+    </div></div>
+    <div class="kt"><h3>Arkady Wrocławskie</h3><dl><dt>Wykonawca</dt><dd>PORR Polska</dd><dt>Okres</dt><dd>05.2005 - 09.2006</dd><dt>Na budowie</dt><dd>800 osób</dd></dl></div>
+   </article>
+  </div>
+
+  <details class="lista">
+   <summary>Pełna lista nadzorowanych inwestycji <span aria-hidden="true">+</span></summary>
+   <ol>
+    <li><b>Galeria handlowa IKEA, Bielany Wrocławskie</b><small>Inter Ikea / Gleeds, od 08.2014</small></li>
+    <li><b>Biurowiec Times II</b><small>PORR, od 08.2014</small></li>
+    <li><b>Instalacja termicznego przekształcania odpadów, Poznań</b><small>Sita Polska, od 08.2014</small></li>
+    <li><b>Hala logistyczna Amazon</b><small>Depenbrock Polska, 01.2014 - 10.2014, 1000 osób</small></li>
+    <li><b>Przebudowa Bulwarów Odry, Wrocław</b><small>Dragados - Pol-Aqua, od 11.2013</small></li>
+    <li><b>Szpital Wojewódzki, Wrocław</b><small>Budimex S.A., 09.2011 - 07.2014, 1500 osób</small></li>
+    <li><b>Elementy mostu dla miasta Sundsvall, Szwecja</b><small>MAX BÖGL, 09.2012 - 10.2013, 500 osób</small></li>
+    <li><b>Wysokościowiec Sky Tower, Wrocław</b><small>02.2010 - 09.2013, ok. 1500 osób</small></li>
+    <li><b>Stadion Miejski, Wrocław</b><small>MAX BÖGL, 02.2010 - 05.2012, ok. 2000 osób</small></li>
+    <li><b>8 oczyszczalni ścieków, woj. opolskie i świętokrzyskie</b><small>ECOL-UNICON, 01.2011 - 2014, ok. 200 osób</small></li>
+    <li><b>Przebudowa i remont Hali Stulecia, Wrocław</b><small>BUDUS S.A., 04.2011 - 10.2011</small></li>
+    <li><b>Przebudowa ul. Kosmonautów, Wrocław</b><small>MAX BÖGL i BERGER BAU, 2010 - 10.2011</small></li>
+    <li><b>Elektrownie wiatrowe Windpark Wielkopolska</b><small>WKAMONTAGE GmbH, 09.2008 - 05.2009</small></li>
+    <li><b>Rozbudowa fabryki Colgate-Palmolive, Świdnica</b><small>PORR Polska S.A., 04.2008 - 12.2008</small></li>
+    <li><b>Przebudowa Mostów Warszawskich, Wrocław</b><small>ARGE PORR / BERGER BAU, 06.2006 - 04.2008, 400 osób</small></li>
+    <li><b>Biurowiec Wieże Strzegomskie, Wrocław</b><small>PORR Polska S.A., 07.2007 - 08.2008</small></li>
+    <li><b>Centrum Handlowe Ferio, Legnica</b><small>PORR Polska S.A., 05.2006 - 03.2007, 250 osób</small></li>
+    <li><b>Centrum Handlowe Arkady Wrocławskie</b><small>PORR Polska S.A., 05.2005 - 09.2006, 800 osób</small></li>
+    <li><b>Kuźnia przemysłowa GKN Driveline, Oleśnica</b><small>PORR Polska S.A., 12.2004 - 12.2005</small></li>
+    <li><b>Hale przemysłowe Winkelmann, Legnica</b><small>PORR Polska S.A., 04.2004 - 11.2005</small></li>
+   </ol>
+  </details>
+ </div>
+</section>
+
+<section class="sek ciemna">
+ <div class="wrap ciem-siatka">
+  <div>
+   <span class="pasy j"></span>
+   <h2>Bezpieczna budowa to mniej przestojów i niższe koszty</h2>
+   <p style="margin-top:20px">Na dużych inwestycjach stosujemy własny system zarządzania bezpieczeństwem pracy. Ogranicza on ryzyko wypadków, a razem z nim koszty przestojów i samej obsługi BHP.</p>
+   <ul class="fakty">
+    <li>Nadzór BHP przy największych inwestycjach Wrocławia i regionu od 2004 roku</li>
+    <li>Aktywny udział w Radzie Budownictwa przy Państwowej Inspekcji Pracy</li>
+    <li>Centrum Handlowe Ferio w Legnicy wyróżnione w ogólnopolskim konkursie PIP "Bezpieczna Budowa"</li>
+    <li>Obsługa także poza budownictwem: Rotomat, Wojewódzki Inspektorat Inspekcji Handlowej, przedszkola, agencje pracy</li>
+   </ul>
+  </div>
+  <figure class="ciem-fot">
+   <img src="img/arkady-sky-tower-640.webp" srcset="img/arkady-sky-tower-640.webp 640w, img/arkady-sky-tower.webp 1200w" sizes="(max-width:900px) 92vw, 640px" width="640" height="388" alt="Panorama Wrocławia z Arkadami Wrocławskimi i Sky Tower" loading="lazy" data-duze="img/arkady-sky-tower.webp">
+   <figcaption>Arkady Wrocławskie i Sky Tower, dwie z budów pod naszym nadzorem BHP</figcaption>
+  </figure>
+ </div>
+</section>
+
+<section class="sek" id="aktualnosci">
+ <div class="wrap">
+  <div class="glowa">
+   <span class="pasy"></span>
+   <h2>Aktualności z budów</h2>
+   <p>Nowe zlecenia i budowy, na których właśnie prowadzimy nadzór BHP.</p>
+  </div>
+  <div class="akt-siatka">
+   <article class="wpis"><time datetime="2019-10">październik 2019</time><h3>Nadzór BHP przy rozbudowie Zakładu Grafityzacji Tokai Cobex w Raciborzu</h3></article>
+   <article class="wpis"><time datetime="2019-09">wrzesień 2019</time><h3>Nadzór BHP nad budową Ośrodka Narciarstwa Biegowego i Biathlonu w Jakuszycach</h3></article>
+   <article class="wpis"><time datetime="2019-06">czerwiec 2019</time><h3>Obsługa BHP projektu inwestycyjnego Stacja 3.0 dla PORR Polska S.A.</h3></article>
+   <article class="wpis"><time datetime="2019-04">kwiecień 2019</time><h3>Nadzór BHP na budowie Q Hotel w Bielanach Wrocławskich</h3></article>
+  </div>
+ </div>
+</section>
+
+<section class="sek stal" id="kontakt">
+ <div class="wrap kontakt">
+  <div>
+   <div class="glowa" style="margin-bottom:28px">
+    <span class="pasy"></span>
+    <h2>Porozmawiajmy o BHP w Państwa firmie lub na budowie</h2>
+   </div>
+   <div class="osoba">
+    <b>Sławomir Bessert</b><span>specjalista ds. BHP</span>
+    <a class="duzy" href="tel:+48500116566">500 116 566</a>
+    <a class="mail" href="mailto:slawekbessert@gmail.com">slawekbessert@gmail.com</a>
+   </div>
+   <div class="adr">
+    <div><h3>Biuro, adres do korespondencji</h3><p>ul. Marsz. Józefa Piłsudskiego 74, lok. 320<br>50-020 Wrocław<br><a href="mailto:bhppartner@gmail.com">bhppartner@gmail.com</a></p></div>
+    <div><h3>Dane do faktury</h3><p>BHP Partner Sławomir Bessert<br>ul. Baskijska 2/2, 54-402 Wrocław<br>NIP 884-212-16-94</p></div>
+   </div>
+  </div>
+  <form id="form" novalidate>
+   <div><label for="f-imie">Imię i nazwisko</label><input id="f-imie" name="imie" autocomplete="name"></div>
+   <div><label for="f-tel">Telefon lub e-mail</label><input id="f-tel" name="kontakt" autocomplete="tel"></div>
+   <div class="cala"><label for="f-tem">Czego dotyczy zapytanie</label>
+    <select id="f-tem" name="temat"><option>Nadzór BHP na budowie</option><option>Stała obsługa BHP firmy</option><option>Szkoła lub przedszkole</option><option>Szkolenia BHP</option><option>Dokumentacja powypadkowa</option><option>Nadzór inwestorski</option><option>Inne</option></select></div>
+   <div class="cala"><label for="f-tr">Wiadomość</label><textarea id="f-tr" name="tresc" placeholder="Np. rodzaj budowy lub firmy, liczba pracowników, termin"></textarea></div>
+   <label class="zgoda cala"><input type="checkbox" required> Wyrażam zgodę na kontakt w sprawie zapytania.</label>
+   <div class="cala"><button class="btn" type="submit">Wyślij zapytanie</button></div>
+   <p class="wynik cala" id="wynik" hidden>To podgląd strony: formularz zacznie wysyłać wiadomości na docelowej stronie.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <div class="wrap">
+  <div class="st-siatka">
+   <div><a class="logo" href="#" aria-label="BHP Partner Grupa Bessert"><svg viewBox="0 0 300 92" aria-hidden="true"><use href="#logo"/></svg></a><p style="margin-top:16px">Nadzór BHP na budowach, obsługa BHP firm i szkolenia BHP. Wrocław i Dolny Śląsk.</p></div>
+   <div><h3>Oferta</h3><p><a href="#oferta">Obsługa BHP</a><br><a href="#szkolenia">Szkolenia BHP</a><br><a href="#oferta">Nadzór inwestorski</a></p></div>
+   <div><h3>Firma</h3><p><a href="#budowy">Inwestycje</a><br><a href="#aktualnosci">Aktualności</a><br><a href="#kontakt">Kontakt</a></p></div>
+   <div><h3>Kontakt</h3><p><a href="tel:+48500116566">500 116 566</a><br><a href="mailto:slawekbessert@gmail.com">slawekbessert@gmail.com</a><br>ul. Piłsudskiego 74/320, Wrocław</p></div>
+  </div>
+  <div class="st-dol">
+   <span>© 2026 BHP Partner - Grupa Bessert</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=bhppartner.com&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+ </div>
+</footer>
+
+<div class="mob" id="mob"><a class="btn zad" href="tel:+48500116566">Zadzwoń</a><a class="btn" href="#kontakt">Zapytaj o BHP</a></div>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+ <button class="x" type="button" aria-label="Zamknij"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="2.4"/></svg></button>
+ <button class="l" type="button" aria-label="Poprzednie zdjęcie"><svg><use href="#ikL"/></svg></button>
+ <img alt="">
+ <button class="p" type="button" aria-label="Następne zdjęcie"><svg><use href="#ikP"/></svg></button>
+ <div class="op"></div>
+</div>
+
+<script>
+(function(){
+ var hdr=document.getElementById('hdr'),bg=document.getElementById('burger');
+ bg.addEventListener('click',function(){var o=hdr.classList.toggle('otw');bg.setAttribute('aria-expanded',o)});
+ document.querySelectorAll('.nav a').forEach(function(a){a.addEventListener('click',function(){hdr.classList.remove('otw');bg.setAttribute('aria-expanded','false')})});
+
+ // pasek mobilny po minieciu przycisku w hero
+ var mob=document.getElementById('mob'),cta=document.querySelector('.hero .btn');
+ if('IntersectionObserver' in window){new IntersectionObserver(function(e){var r=e[0];mob.classList.toggle('widac',!r.isIntersecting&&r.boundingClientRect.top<0)}).observe(cta)}
+
+ // aktywna pozycja menu
+ var linki=[].slice.call(document.querySelectorAll('.nav a'));
+ var sek=linki.map(function(a){return document.querySelector(a.getAttribute('href'))});
+ addEventListener('scroll',function(){var y=scrollY+innerHeight*.35,akt=-1;sek.forEach(function(s,i){if(s&&s.getBoundingClientRect().top+scrollY<=y)akt=i});linki.forEach(function(a,i){a.classList.toggle('akt',i===akt)})},{passive:true});
+
+ // tor kart: strzalki i przeciaganie mysza
+ var tor=document.getElementById('tor');
+ document.querySelectorAll('[data-tor]').forEach(function(b){b.addEventListener('click',function(){var k=tor.querySelector('.karta');tor.scrollBy({left:(+b.dataset.tor)*(k.offsetWidth+22),behavior:'smooth'})})});
+ function ciagnij(el,gdy){var x0,s0,ruch=false,wcis=false;
+  el.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;wcis=true;ruch=false;x0=e.clientX;s0=el.scrollLeft});
+  addEventListener('pointermove',function(e){if(!wcis)return;var d=e.clientX-x0;if(Math.abs(d)>5){ruch=true;el.classList.add('ciag');el.scrollLeft=s0-d}});
+  addEventListener('pointerup',function(){if(!wcis)return;wcis=false;el.classList.remove('ciag');if(ruch&&gdy)gdy()});
+  el.addEventListener('click',function(e){if(ruch){e.preventDefault();e.stopPropagation();ruch=false}},true);
+  el.addEventListener('dragstart',function(e){e.preventDefault()});}
+ ciagnij(tor);
+
+ // zdjecia w kartach
+ document.querySelectorAll('.fot').forEach(function(f){
+  var pas=f.querySelector('.pas'),n=pas.children.length;if(n<2)return;
+  var lic=document.createElement('span');lic.className='lic';lic.textContent='1/'+n;f.appendChild(lic);
+  ['l','p'].forEach(function(s,i){var b=document.createElement('button');b.type='button';b.className='ps '+s;b.setAttribute('aria-label',i?'Następne zdjęcie':'Poprzednie zdjęcie');b.innerHTML='<svg><use href="#ik'+(i?'P':'L')+'"/></svg>';b.addEventListener('click',function(e){e.stopPropagation();pas.scrollBy({left:(i?1:-1)*pas.clientWidth,behavior:'smooth'})});f.appendChild(b)});
+  pas.addEventListener('scroll',function(){lic.textContent=(Math.round(pas.scrollLeft/pas.clientWidth)+1)+'/'+n},{passive:true});
+  pas.addEventListener('pointerdown',function(e){e.stopPropagation()});
+ });
+
+ // lightbox
+ var lb=document.getElementById('lb'),lbi=lb.querySelector('img'),op=lb.querySelector('.op'),grupa=[],ix=0;
+ function pokaz(){var im=grupa[ix];lbi.src=im.dataset.duze||im.currentSrc||im.src;lbi.alt=im.alt;op.textContent=im.alt+(grupa.length>1?'  ('+(ix+1)+'/'+grupa.length+')':'')}
+ document.querySelectorAll('.fot img, .ciem-fot img').forEach(function(im){im.addEventListener('click',function(){var p=im.closest('.pas');grupa=p?[].slice.call(p.children):[im];ix=grupa.indexOf(im);pokaz();lb.classList.add('otw')})});
+ function zamknij(){lb.classList.remove('otw')}
+ lb.querySelector('.x').addEventListener('click',zamknij);
+ lb.addEventListener('click',function(e){if(e.target===lb)zamknij()});
+ lb.querySelector('.l').addEventListener('click',function(){ix=(ix-1+grupa.length)%grupa.length;pokaz()});
+ lb.querySelector('.p').addEventListener('click',function(){ix=(ix+1)%grupa.length;pokaz()});
+ addEventListener('keydown',function(e){if(!lb.classList.contains('otw'))return;if(e.key==='Escape')zamknij();if(e.key==='ArrowLeft')lb.querySelector('.l').click();if(e.key==='ArrowRight')lb.querySelector('.p').click()});
+
+ // formularz pokazowy
+ document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('wynik').hidden=false});
+})();
+</script>
+</body>
+</html>
